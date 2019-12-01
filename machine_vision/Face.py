@@ -47,6 +47,7 @@ while(True):
         for i in code:
             print(i)
             a = img.draw_rectangle(i.rect())
+            lcd.draw_string(100,20, "CAUTION!!", lcd.WHITE, lcd.RED)
             sleep(1)
     a = lcd.display(img)
 a = kpu.deinit(task)
